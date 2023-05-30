@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+ html {
+     height: 100px;
+ }
+ 
+ body {
+     background-image: url('./img/gambar-pemandangan-bunga.jpg');
+     background-size: cover;
+ }
+
+  .container{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px 100px;
+     
+  }
+  
+  .content-box{
+      max-width: 850px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+ .main{
+     position:absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 400px;
+    padding: 40px;
+     box-sizing: border-box;
+     border: 1px solid rgba(0,0,0,1);
+     
+     background: rgba(255,255,255,0.1);
+     border-radius: 6px;
+     box-shadow: 7px 7px 60px  rgba(0,0,0,1);
+ }
+
+  .main h2{
+      margin: 0 40px;
+      padding: 15px;
+      color: #0b1318;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+  }
+
+   .main .border{
+       width: 70px;
+       padding: 3px;
+       margin: 1px auto;
+   }
+ .main input{
+     padding: 10px 0;
+     margin-bottom: 15px;
+ }
+
+ .main input,
+ .main textarea{
+     width: 100%;
+     box-sizing: border-box;
+     outline: none;
+     border:none;
+     border-bottom: 2px solid #999;
+ }
+ .main textarea{
+     margin-bottom: 20px;
+ }
+
+  .main input[type="submit"]{
+      border-bottom: none;
+      cursor: pointer;
+      background: #cc2626 ;
+      color: rgb(255, 255, 255);
+      margin-bottom: 0;
+      text-transform: uppercase;
+  }
+
+  .main form div{
+    position: relative;
+}
+
+ .main input[type="submit"]:hover{
+     background: #8f0a06
+ }
